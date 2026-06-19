@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Editor
+.vscode/
+.idea/
+*.sublime-*
+
+# Build / temp
+*.tmp
+*.bak
+*.log
+node_modules/
+.cache/
