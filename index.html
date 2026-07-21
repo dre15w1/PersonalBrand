@@ -414,6 +414,17 @@
       .dropcap::first-letter { font-size: 4.5rem; }
       .photo-break { height: 50vh; min-height: 360px; }
     }
+  
+    @media (max-width: 900px) {
+      #the-build { padding: 80px 0; }
+      #the-build > div { padding: 0 20px; }
+      .build-metrics { grid-template-columns: 1fr 1fr !important; }
+      .build-metrics > div:nth-child(5) { grid-column: 1 / -1; }
+      .build-features { grid-template-columns: 1fr !important; }
+      .build-features > div { padding: 24px !important; }
+      .build-perf > div { grid-template-columns: 1fr !important; gap: 28px !important; }
+    }
+
   </style>
 </head>
 <body>
@@ -427,6 +438,7 @@
       <li><a href="#dossier">Dossier</a></li>
       <li><a href="#career">Career</a></li>
       <li><a href="#chapters">Work</a></li>
+      <li><a href="#the-build">The Build</a></li>
       <li><a href="#collection">Collection</a></li>
       <li><a href="#experiences">Experiences</a></li>
       <li><a href="#atlas">Atlas</a></li>
@@ -464,6 +476,8 @@
       <span class="marquee-item"><em>· GSU</em>BBA + MS · CIS</span>
       <span class="marquee-item"><em>· FLEET</em>McLaren 570S</span>
       <span class="marquee-item"><em>· COMMUNITY</em>Stocks for the Culture</span>
+      <span class="marquee-item"><em>· BUILT</em>Automated Options Trading Platform</span>
+      <span class="marquee-item"><em>· 40K+</em>Lines of Production Python</span>
       <span class="marquee-item"><em>· STRYTEN ENERGY</em>IT Apps Manager</span>
       <span class="marquee-item"><em>· EXITED</em>The Good Barber — Acquired</span>
       <span class="marquee-item"><em>· FOUNDED</em>LUX Home Rental</span>
@@ -473,6 +487,8 @@
       <span class="marquee-item"><em>· GSU</em>BBA + MS · CIS</span>
       <span class="marquee-item"><em>· FLEET</em>McLaren 570S</span>
       <span class="marquee-item"><em>· COMMUNITY</em>Stocks for the Culture</span>
+      <span class="marquee-item"><em>· BUILT</em>Automated Options Trading Platform</span>
+      <span class="marquee-item"><em>· 40K+</em>Lines of Production Python</span>
     </div>
   </div>
 
@@ -502,7 +518,7 @@
           The day job is real: at <strong>Stryten Energy</strong>, he manages a cross-functional team of seven across enterprise application development, SaaS platforms, and analytics &amp; automation — and is currently leading IT integration planning for a corporate acquisition. The CV behind it is deeper: <strong>nine years at UPS Capital</strong> leading mission-critical financial reconciliation platforms, three more at <strong>Home Depot</strong> consolidating omnichannel fulfillment, and a Georgia Pacific tour that generated <strong>$4M+ in annual operational savings</strong>.
         </p>
         <p class="body-text reveal reveal-d2">
-          On the side, he founded <strong>The Good Barber</strong> — a multi-platform fintech marketplace — built and led a remote team of five engineers through Web, iOS, and Android, and exited via acquisition. Founded and ran <strong>LUX Home</strong> — a luxury short-term rental operation in Atlanta — hosted on Airbnb, generating five figures in 2022 alone before sunsetting the operation. Today the studio behind it all, <strong>Walkers Software Development LLC</strong>, builds custom software for clients who want technology done right.
+          On the side, he founded <strong>The Good Barber</strong> — a multi-platform fintech marketplace — built and led a remote team of five engineers through Web, iOS, and Android, and exited via acquisition. Founded and ran <strong>LUX Home</strong> — a luxury short-term rental operation in Atlanta — hosted on Airbnb, generating five figures in 2022 alone before sunsetting the operation. Today the studio behind it all, <strong>Walkers Software Development LLC</strong>, ships its own in-house software including a <strong>40K+ line automated options trading platform</strong> integrating Charles Schwab's live API with structural risk management and ML confirmation.
         </p>
 
         <blockquote class="pullquote reveal reveal-d2">
@@ -699,10 +715,10 @@
           <div class="chapter-num">01 / 03</div>
           <div class="chapter-kicker">Software Studio</div>
           <h3 class="chapter-title">Walkers <em>Software Dev.</em></h3>
-          <p class="chapter-body">The studio behind The Good Barber. Today it builds custom mobile apps, automation systems, and AI integrations for clients who want technology done right. Lean team, enterprise-grade rigor, delivery on time.</p>
+          <p class="chapter-body">The studio behind The Good Barber. Its flagship in-house product: a self-hosted <strong>automated options trading platform</strong> — 40K+ lines of production Python integrating Charles Schwab's live API, running 19 hot-swappable strategies with structural risk management and a nightly-retraining ML confirmation layer. When Walkers builds for itself, it builds at enterprise-grade rigor.</p>
           <div class="chapter-stats">
             <div class="stat-row"><span class="k">Type</span><span class="v">Software Studio · LLC</span></div>
-            <div class="stat-row"><span class="k">Focus</span><span class="v">Mobile · Web · AI Automation</span></div>
+            <div class="stat-row"><span class="k">Flagship</span><span class="v">Automated Options Trading Platform</span></div>
             <div class="stat-row"><span class="k">Track Record</span><span class="v">The Good Barber — Acquired</span></div>
             <div class="stat-row"><span class="k">Founder</span><span class="v">Andre Walker · CTO</span></div>
           </div>
@@ -750,6 +766,162 @@
     </div>
   </section>
 
+
+  <!-- ===== § 04 — THE BUILD ===== -->
+  <section id="the-build" style="background: linear-gradient(180deg, #0a090c 0%, #0f0d13 100%); border-top: 1px solid var(--rule); padding: 140px 0;">
+    <div style="max-width: 1400px; margin: 0 auto; padding: 0 48px;">
+
+      <!-- Header -->
+      <div class="reveal" style="margin-bottom: 80px; max-width: 900px;">
+        <div class="section-num">§ 04</div>
+        <div class="section-kicker">The Build · Signature Project</div>
+        <h2 class="section-title">Trading, <em>engineered.</em></h2>
+        <p class="section-lead" style="margin-top: 24px;">A self-hosted algorithmic options trading platform. 40,000+ lines of production Python. Real capital, real broker, real data — governed by the same discipline Andre brings to enterprise IT.</p>
+      </div>
+
+      <!-- Scale metrics band -->
+      <div class="reveal build-metrics" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px; background: var(--rule); border: 1px solid var(--rule); margin-bottom: 60px;">
+        <div style="background: var(--bg-panel); padding: 28px 20px; text-align: center;">
+          <div style="font-family: Fraunces,serif; font-weight: 300; font-size: clamp(1.6rem, 3vw, 2.6rem); color: var(--accent); line-height: 1; margin-bottom: 8px; font-style: italic;">40,172</div>
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-mute);">Lines of Python</div>
+        </div>
+        <div style="background: var(--bg-panel); padding: 28px 20px; text-align: center;">
+          <div style="font-family: Fraunces,serif; font-weight: 300; font-size: clamp(1.6rem, 3vw, 2.6rem); color: var(--accent); line-height: 1; margin-bottom: 8px; font-style: italic;">113</div>
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-mute);">Modules</div>
+        </div>
+        <div style="background: var(--bg-panel); padding: 28px 20px; text-align: center;">
+          <div style="font-family: Fraunces,serif; font-weight: 300; font-size: clamp(1.6rem, 3vw, 2.6rem); color: var(--accent); line-height: 1; margin-bottom: 8px; font-style: italic;">19</div>
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-mute);">Strategies</div>
+        </div>
+        <div style="background: var(--bg-panel); padding: 28px 20px; text-align: center;">
+          <div style="font-family: Fraunces,serif; font-weight: 300; font-size: clamp(1.6rem, 3vw, 2.6rem); color: var(--accent); line-height: 1; margin-bottom: 8px; font-style: italic;">59</div>
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-mute);">Symbols Tracked</div>
+        </div>
+        <div style="background: var(--bg-panel); padding: 28px 20px; text-align: center;">
+          <div style="font-family: Fraunces,serif; font-weight: 300; font-size: clamp(1.6rem, 3vw, 2.6rem); color: var(--accent); line-height: 1; margin-bottom: 8px; font-style: italic;">2.76M</div>
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-mute);">Bars Cached</div>
+        </div>
+      </div>
+
+      <!-- Feature groups grid -->
+      <div class="reveal build-features" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 60px;">
+
+        <div style="border: 1px solid var(--rule); padding: 32px; background: var(--bg-panel);">
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; font-weight: 500;">01 · Market Data &amp; Broker</div>
+          <div style="font-family: Fraunces,serif; font-size: 1.08rem; color: var(--ink); font-weight: 400; line-height: 1.55; margin-bottom: 16px;">Charles Schwab Trader API integration with OAuth2 and auto-refresh. Real-time WebSocket streaming, Level 2 book depth multiplexed on a single account socket, full option chain with live Greeks, multi-interval OHLCV, and a 2.76M-row local cache with rate-limit governor and yfinance failover.</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">OAuth2</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">WebSocket</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Level 2</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Live Greeks</span>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--rule); padding: 32px; background: var(--bg-panel);">
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; font-weight: 500;">02 · Strategy Engine</div>
+          <div style="font-family: Fraunces,serif; font-size: 1.08rem; color: var(--ink); font-weight: 400; line-height: 1.55; margin-bottom: 16px;">19 hot-swappable strategy modules behind a common scan interface — market structure (BOS, CHoCH, fractal pivots), smart-money concepts (FVGs, supply/demand, liquidity sweeps, order blocks), volume profile, order flow, and classical technicals. Every signal emits a human-readable explanation of why it fired.</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">BOS / CHoCH</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Fair Value Gaps</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Order Flow</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">MTF Confluence</span>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--rule); padding: 32px; background: var(--bg-panel);">
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; font-weight: 500;">03 · Options Pricing &amp; Selection</div>
+          <div style="font-family: Fraunces,serif; font-size: 1.08rem; color: var(--ink); font-weight: 400; line-height: 1.55; margin-bottom: 16px;">Black-Scholes pricing with correct time-decay across the holding period. Delta-targeted strike selection with dynamic expiry rules (0DTE / 1DTE / weekly). Contract quality gates on spread, open interest, volume, and stale Greeks — plus IV-vs-realized comparison for premium richness.</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Black-Scholes</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Delta Targeting</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">0DTE / 1DTE</span>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--rule); padding: 32px; background: var(--bg-panel);">
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; font-weight: 500;">04 · Risk Management</div>
+          <div style="font-family: Fraunces,serif; font-size: 1.08rem; color: var(--ink); font-weight: 400; line-height: 1.55; margin-bottom: 16px;">Position sizing derived from underlying invalidation levels, not premium available. Structural stops that exit on the stock breaking structure — not on premium moves caused by spread or volatility. Circuit breakers, daily loss limits, consecutive-loss cooldowns, earnings gating, and an account-level kill switch.</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Circuit Breakers</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Structural Stops</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Kill Switch</span>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--rule); padding: 32px; background: var(--bg-panel);">
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; font-weight: 500;">05 · ML Confirmation</div>
+          <div style="font-family: Fraunces,serif; font-size: 1.08rem; color: var(--ink); font-weight: 400; line-height: 1.55; margin-bottom: 16px;">Per-symbol adaptive models with nightly automated retraining. Regime-conditioned variants (gamma-positive, gamma-negative, near-max-pain). AI confirmation layer that can veto or downsize signals below a confidence threshold. Feature extraction from order book state, volume profile, and market structure.</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">scikit-learn</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Nightly Retraining</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Regime Models</span>
+          </div>
+        </div>
+
+        <div style="border: 1px solid var(--rule); padding: 32px; background: var(--bg-panel);">
+          <div style="font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; font-weight: 500;">06 · Research Harness</div>
+          <div style="font-family: Fraunces,serif; font-size: 1.08rem; color: var(--ink); font-weight: 400; line-height: 1.55; margin-bottom: 16px;">Event-driven backtester with explicit execution cost modeling — spread, decay, commissions. Gap-aware fills. Monte Carlo simulation and bootstrap confidence intervals on profit factor. Walk-forward validation. Parameter optimizers with performance attribution by strategy, symbol, hour, and regime.</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Monte Carlo</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Walk-Forward</span>
+            <span style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; padding: 4px 10px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Bootstrap CIs</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Forward test performance callout -->
+      <div class="reveal build-perf" style="border: 1px solid var(--accent-soft); background: linear-gradient(135deg, rgba(212,175,90,0.04), rgba(212,175,90,0.01)); padding: 40px; margin-bottom: 60px;">
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: start;">
+          <div>
+            <div style="font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; font-weight: 500;">Forward Test · Paper Execution on Live Data</div>
+            <h3 style="font-family: Fraunces,serif; font-weight: 300; font-size: clamp(1.4rem, 2.5vw, 2rem); letter-spacing: -0.02em; line-height: 1.15; color: var(--ink); margin-bottom: 18px;">Profitable across 166 trades. <em style="font-style: italic; color: var(--accent);">1.56 profit factor.</em></h3>
+            <div style="font-family: Fraunces,serif; font-weight: 300; font-size: 1.05rem; color: var(--ink-soft); line-height: 1.6; margin-bottom: 20px;">Real signals, real quotes, simulated fills. 10 trading sessions, July 7–20, 2026.</div>
+            <div style="border-top: 1px solid var(--rule); padding-top: 18px; font-family: JetBrains Mono,monospace; font-size: 0.68rem; color: var(--ink-mute); letter-spacing: 0.05em; line-height: 1.7;">
+              Statistical caveat: sample size below 95% confidence threshold (t = 1.38). Bootstrap 95% CI on profit factor spans 0.84–2.71. Best session contributed 69% of net profit. This is a forward-test record, not a live track record.
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--rule);">
+            <div style="background: var(--bg-panel); padding: 20px;">
+              <div style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 6px;">Net</div>
+              <div style="font-family: Fraunces,serif; font-weight: 300; font-size: 1.6rem; color: var(--ink); letter-spacing: -0.02em;">+$3,953</div>
+            </div>
+            <div style="background: var(--bg-panel); padding: 20px;">
+              <div style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 6px;">Profit Factor</div>
+              <div style="font-family: Fraunces,serif; font-weight: 300; font-size: 1.6rem; color: var(--ink); letter-spacing: -0.02em;">1.56</div>
+            </div>
+            <div style="background: var(--bg-panel); padding: 20px;">
+              <div style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 6px;">Payoff Ratio</div>
+              <div style="font-family: Fraunces,serif; font-weight: 300; font-size: 1.6rem; color: var(--ink); letter-spacing: -0.02em;">2.76×</div>
+            </div>
+            <div style="background: var(--bg-panel); padding: 20px;">
+              <div style="font-family: JetBrains Mono,monospace; font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 6px;">Green Sessions</div>
+              <div style="font-family: Fraunces,serif; font-weight: 300; font-size: 1.6rem; color: var(--ink); letter-spacing: -0.02em;">7/10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech stack row -->
+      <div class="reveal" style="text-align: center;">
+        <div style="font-family: JetBrains Mono,monospace; font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 20px;">Built With</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+          <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">Python 3.14</span>
+          <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">Flask</span>
+          <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">pandas + NumPy</span>
+          <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">scikit-learn</span>
+          <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">SQLite</span>
+          <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">Schwab Trader API</span>
+          <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">WebSocket</span>
+          <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">OAuth2</span>
+          <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">Discord Webhooks</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
   <div class="photo-break" style="background-image: url('images/tesla-sit.jpg');">
     <div class="photo-break-content">
       <div class="photo-break-quote">"Don't pick a lane. Build them all."</div>
@@ -761,7 +933,7 @@
     <div class="collection-wrap">
       <div class="collection-header">
         <div class="reveal">
-          <div class="section-num">§ 04</div>
+          <div class="section-num">§ 05</div>
           <div class="section-kicker">The Collection</div>
           <h2 class="section-title">Objects with <em>intent.</em></h2>
         </div>
@@ -831,7 +1003,7 @@
   <section id="experiences">
     <div class="exp-wrap">
       <div class="exp-header reveal">
-        <div class="section-num">§ 05</div>
+        <div class="section-num">§ 06</div>
         <div class="section-kicker">Experiences</div>
         <h2 class="section-title">Tables. Rooms. <em>Moments.</em></h2>
         <p class="section-lead">The places that taught taste. Restaurants, events, and rooms collected one trip at a time.</p>
@@ -876,7 +1048,7 @@
     <!-- Header -->
     <div style="padding: 0 48px; margin-bottom: 60px; max-width: 1400px; margin-left: auto; margin-right: auto;">
       <div class="reveal">
-        <div class="section-num">§ 06</div>
+        <div class="section-num">§ 07</div>
         <div class="section-kicker">The Atlas</div>
         <h2 class="section-title">9 countries. <em>29 cities. 113 nights.</em></h2>
         <p class="section-lead">Top 1% of Hotels.com users since 2016. 18,186 miles logged on KAYAK. London top destination. Sydney to São Paulo, Amsterdam to Bali, Bogotá to Cape Town — every continent except Antarctica.</p>
@@ -976,7 +1148,7 @@
   <section id="community">
     <div class="community-grid">
       <div class="reveal">
-        <div class="section-num">§ 08</div>
+        <div class="section-num">§ 09</div>
         <div class="section-kicker">The Audience</div>
         <h2 class="section-title">Built in <em>public.</em></h2>
         <p class="section-lead" style="margin-top: 28px;">Sixteen thousand on Instagram. A hundred-plus traders in the Discord. Nine years on Stocktwits. The community is the proof — and the point.</p>
@@ -999,7 +1171,7 @@
   </section>
 
   <section id="inquiry">
-    <div class="section-num">§ 09</div>
+    <div class="section-num">§ 10</div>
     <div class="section-kicker">Inquiry</div>
     <h2 class="inquiry-headline">Software. Cars. <em>Collaboration.</em></h2>
     <p class="inquiry-body">One inbox for software projects through Walkers Software Dev, vehicle rentals through Car Rentals of Atlanta, podcast features, content collaborations, or to talk shop with someone living it out loud.</p>
