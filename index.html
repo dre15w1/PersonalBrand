@@ -352,6 +352,161 @@
     .reveal-d3 { transition-delay: 0.3s; }
     .scroll-bar { position: fixed; top: 0; left: 0; height: 2px; background: var(--accent); z-index: 60; transition: width 0.1s linear; }
 
+    
+    /* Hamburger toggle (mobile only) */
+    .mast-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.15);
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      transition: border-color 0.2s;
+      justify-self: end;
+    }
+    .mast-toggle:hover { border-color: var(--accent); }
+    .mast-toggle span {
+      display: block;
+      width: 20px;
+      height: 1.5px;
+      background: var(--ink);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    body.menu-open .mast-toggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    body.menu-open .mast-toggle span:nth-child(2) { opacity: 0; }
+    body.menu-open .mast-toggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    body.menu-open .mast-toggle span { background: var(--accent); }
+
+    /* Full-screen mobile overlay */
+    .mobile-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 45;
+      background: rgba(8,7,10,0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      overflow-y: auto;
+    }
+    body.menu-open .mobile-overlay {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .mobile-overlay-inner {
+      width: 100%;
+      max-width: 640px;
+      padding: 100px 32px 60px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .mobile-overlay-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .mobile-overlay-issue {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+    }
+    .mobile-overlay-close {
+      background: transparent;
+      border: none;
+      color: var(--ink);
+      font-size: 2.4rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0;
+      width: 44px;
+      height: 44px;
+      transition: color 0.2s;
+    }
+    .mobile-overlay-close:hover { color: var(--accent); }
+    .mobile-overlay-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 60px 0;
+      flex-grow: 1;
+    }
+    .mobile-overlay-list li {
+      border-bottom: 1px solid var(--rule);
+      opacity: 0;
+      transform: translateY(15px);
+      transition: opacity 0.5s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1);
+    }
+    body.menu-open .mobile-overlay-list li { opacity: 1; transform: translateY(0); }
+    body.menu-open .mobile-overlay-list li:nth-child(1) { transition-delay: 0.1s; }
+    body.menu-open .mobile-overlay-list li:nth-child(2) { transition-delay: 0.14s; }
+    body.menu-open .mobile-overlay-list li:nth-child(3) { transition-delay: 0.18s; }
+    body.menu-open .mobile-overlay-list li:nth-child(4) { transition-delay: 0.22s; }
+    body.menu-open .mobile-overlay-list li:nth-child(5) { transition-delay: 0.26s; }
+    body.menu-open .mobile-overlay-list li:nth-child(6) { transition-delay: 0.30s; }
+    body.menu-open .mobile-overlay-list li:nth-child(7) { transition-delay: 0.34s; }
+    body.menu-open .mobile-overlay-list li:nth-child(8) { transition-delay: 0.38s; }
+    body.menu-open .mobile-overlay-list li:nth-child(9) { transition-delay: 0.42s; }
+    .mobile-overlay-list a {
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+      padding: 22px 4px;
+      text-decoration: none;
+      color: var(--ink);
+      font-family: 'Fraunces', serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      transition: color 0.2s, padding-left 0.3s;
+    }
+    .mobile-overlay-list a:hover,
+    .mobile-overlay-list a:active {
+      color: var(--accent);
+      padding-left: 12px;
+    }
+    .mnum {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      font-style: normal;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+    .mobile-overlay-foot {
+      padding-top: 32px;
+      border-top: 1px solid var(--rule);
+    }
+    .mobile-overlay-foot a {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.05rem;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent-soft);
+      padding-bottom: 4px;
+    }
+
+    /* Show hamburger only on mobile */
+    @media (max-width: 900px) {
+      .mast-toggle { display: flex; }
+    }
+    body.menu-open { overflow: hidden; }
+
     @media (max-width: 1100px) { .mast-nav { gap: 18px; } .mast-nav a { font-size: 0.7rem; } }
     @media (max-width: 900px) {
       .mast { padding: 14px 20px; grid-template-columns: 1fr auto; gap: 16px; }
@@ -446,8 +601,36 @@
       <li><a href="#collection">Collection</a></li>
       <li><a href="#experiences">Experiences</a></li>
       <li><a href="#atlas">Atlas</a></li>
+      <li><a href="#community">Community</a></li>
       <li><a href="#inquiry">Inquiry</a></li>
     </ul>
+    <button class="mast-toggle" aria-label="Open menu" id="mastToggle">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Full-screen mobile overlay menu -->
+    <nav class="mobile-overlay" id="mobileMenu" aria-label="Site navigation">
+      <div class="mobile-overlay-inner">
+        <div class="mobile-overlay-header">
+          <div class="mobile-overlay-issue">VOL.001 · ATLANTA · 2026</div>
+          <button class="mobile-overlay-close" aria-label="Close menu" id="mobileClose">&times;</button>
+        </div>
+        <ul class="mobile-overlay-list">
+          <li><a href="#dossier"><span class="mnum">§ 01</span> Dossier</a></li>
+          <li><a href="#career"><span class="mnum">§ 02</span> The Track Record</a></li>
+          <li><a href="#chapters"><span class="mnum">§ 03</span> The Work</a></li>
+          <li><a href="#the-build"><span class="mnum">§ 04</span> The Build</a></li>
+          <li><a href="#collection"><span class="mnum">§ 05</span> The Collection</a></li>
+          <li><a href="#experiences"><span class="mnum">§ 06</span> Experiences</a></li>
+          <li><a href="#atlas"><span class="mnum">§ 07</span> The Atlas</a></li>
+          <li><a href="#community"><span class="mnum">§ 09</span> The Audience</a></li>
+          <li><a href="#inquiry"><span class="mnum">§ 10</span> Inquiry</a></li>
+        </ul>
+        <div class="mobile-overlay-foot">
+          <a href="mailto:andreewalker10@gmail.com">andreewalker10@gmail.com</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <section class="hero">
@@ -1264,6 +1447,23 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
     reveals.forEach(r => observer.observe(r));
+
+    // Mobile menu toggle
+    (function() {
+      const toggle = document.getElementById('mastToggle');
+      const close = document.getElementById('mobileClose');
+      const links = document.querySelectorAll('.mobile-overlay-list a, .mobile-overlay-foot a');
+      const body = document.body;
+      if (!toggle) return;
+      toggle.addEventListener('click', () => body.classList.toggle('menu-open'));
+      if (close) close.addEventListener('click', () => body.classList.remove('menu-open'));
+      links.forEach(a => a.addEventListener('click', () => body.classList.remove('menu-open')));
+      // ESC key closes
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') body.classList.remove('menu-open');
+      });
+    })();
+
     document.querySelectorAll('.toggle-btn').forEach(btn => {
 
       btn.addEventListener('click', () => {
