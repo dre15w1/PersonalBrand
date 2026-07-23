@@ -423,6 +423,10 @@
       .build-features { grid-template-columns: 1fr !important; }
       .build-features > div { padding: 24px !important; }
       .build-perf > div { grid-template-columns: 1fr !important; gap: 28px !important; }
+
+      .studio-grid { grid-template-columns: 1fr !important; }
+      .studio-grid > div { padding: 24px !important; }
+
     }
 
   </style>
@@ -717,7 +721,7 @@
           <div class="chapter-num">01 / 03</div>
           <div class="chapter-kicker">Software Studio</div>
           <h3 class="chapter-title">Walkers <em>Software Dev.</em></h3>
-          <p class="chapter-body">The studio behind The Good Barber. Its flagship in-house product: a self-hosted <strong>automated options trading platform</strong> — 40K+ lines of production Python integrating Charles Schwab's live API, running 19 hot-swappable strategies with structural risk management and a nightly-retraining ML confirmation layer. When Walkers builds for itself, it builds at enterprise-grade rigor.</p>
+          <p class="chapter-body">The studio behind The Good Barber. Ships across verticals — a fintech marketplace (acquired), a 40K+ line <strong>automated options trading platform</strong> integrating Charles Schwab's live API with ML-confirmed strategies, and a <strong>personal health OS</strong> pulling live Apple Health biometrics with inventory-aware daily protocols. When Walkers builds for itself, it builds at enterprise-grade rigor.</p>
           <div class="chapter-stats">
             <div class="stat-row"><span class="k">Type</span><span class="v">Software Studio · LLC</span></div>
             <div class="stat-row"><span class="k">Flagship</span><span class="v">Automated Options Trading Platform</span></div>
@@ -918,6 +922,56 @@
           <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">WebSocket</span>
           <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">OAuth2</span>
           <span style="font-family: JetBrains Mono,monospace; font-size: 0.72rem; padding: 10px 18px; border: 1px solid var(--rule-strong); color: var(--ink); letter-spacing: 0.08em;">Discord Webhooks</span>
+        </div>
+      </div>
+
+
+      <!-- Also from the studio -->
+      <div class="reveal studio-shelf" style="margin-top: 80px; padding-top: 60px; border-top: 1px solid var(--rule);">
+        <div style="font-family: JetBrains Mono,monospace; font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 8px;">Also From the Studio</div>
+        <h3 style="font-family: Fraunces,serif; font-weight: 300; font-size: clamp(1.6rem, 2.5vw, 2rem); letter-spacing: -0.02em; color: var(--ink); margin-bottom: 40px;">Three products. <em style="font-style: italic; color: var(--accent);">Three verticals.</em></h3>
+
+        <div class="studio-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--rule); border: 1px solid var(--rule);">
+
+          <!-- The Good Barber -->
+          <div style="background: var(--bg-panel); padding: 36px; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; padding: 4px 10px; background: rgba(111,185,143,0.15); color: var(--green); letter-spacing: 0.15em; font-weight: 500;">✱ ACQUIRED</span>
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; letter-spacing: 0.18em; color: var(--ink-mute); text-transform: uppercase;">FinTech</span>
+            </div>
+            <div style="font-family: Fraunces,serif; font-weight: 400; font-size: 1.5rem; letter-spacing: -0.02em; line-height: 1.1; color: var(--ink); margin-bottom: 8px;">The Good <em style="font-style: italic; color: var(--accent);">Barber</em></div>
+            <div style="font-family: JetBrains Mono,monospace; font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; margin-bottom: 20px; text-transform: uppercase;">Marketplace · iOS · Android · Web</div>
+            <div style="font-family: Fraunces,serif; font-size: 1rem; color: var(--ink-soft); line-height: 1.55; flex-grow: 1;">A multi-platform fintech marketplace for the barbering industry. B2C/B2B payments, real-time booking, resource management. Founded, built with a team of five, shipped, and exited.</div>
+          </div>
+
+          <!-- The Build (this section) -->
+          <div style="background: var(--bg-panel); padding: 36px; display: flex; flex-direction: column; border-left: 2px solid var(--accent);">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; padding: 4px 10px; background: var(--accent); color: var(--bg); letter-spacing: 0.15em; font-weight: 500;">◆ SIGNATURE</span>
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; letter-spacing: 0.18em; color: var(--ink-mute); text-transform: uppercase;">Quant / Trading</span>
+            </div>
+            <div style="font-family: Fraunces,serif; font-weight: 400; font-size: 1.5rem; letter-spacing: -0.02em; line-height: 1.1; color: var(--ink); margin-bottom: 8px;">The <em style="font-style: italic; color: var(--accent);">Build</em></div>
+            <div style="font-family: JetBrains Mono,monospace; font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; margin-bottom: 20px; text-transform: uppercase;">Automated Options Platform</div>
+            <div style="font-family: Fraunces,serif; font-size: 1rem; color: var(--ink-soft); line-height: 1.55; flex-grow: 1;">40K+ line self-hosted algorithmic options trading platform. Charles Schwab API, 19 strategy modules, structural risk management, ML confirmation layer. Detailed above.</div>
+          </div>
+
+          <!-- DRESEAN Wellness -->
+          <div style="background: var(--bg-panel); padding: 36px; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; padding: 4px 10px; background: rgba(212,175,90,0.15); color: var(--accent); letter-spacing: 0.15em; font-weight: 500;">● LIVE</span>
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; letter-spacing: 0.18em; color: var(--ink-mute); text-transform: uppercase;">Health / Biometrics</span>
+            </div>
+            <div style="font-family: Fraunces,serif; font-weight: 400; font-size: 1.5rem; letter-spacing: -0.02em; line-height: 1.1; color: var(--ink); margin-bottom: 8px;">DRESEAN <em style="font-style: italic; color: var(--accent);">Wellness</em></div>
+            <div style="font-family: JetBrains Mono,monospace; font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; margin-bottom: 20px; text-transform: uppercase;">Personal Health OS · Vercel</div>
+            <div style="font-family: Fraunces,serif; font-size: 1rem; color: var(--ink-soft); line-height: 1.55; flex-grow: 1;">A browser-based personal health OS. Four modules — peptide &amp; supplement scheduling with syringe compatibility logic and injection-site rotation, morning/evening skincare with auto-detected mask nights, ten-product hair protocol (Minoxidil, ketoconazole, dermaroller, rosemary oil, supplements), and live Apple Health integration surfacing BP, HRV, SpO2, sleep, and weight. Inventory-aware — out-of-stock items disappear from daily schedules automatically. PIN-locked admin.</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 18px;">
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; padding: 3px 8px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Vercel</span>
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; padding: 3px 8px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">Apple HealthKit</span>
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; padding: 3px 8px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">PWA</span>
+              <span style="font-family: JetBrains Mono,monospace; font-size: 0.58rem; padding: 3px 8px; background: var(--bg); color: var(--ink-soft); letter-spacing: 0.05em;">PIN-Gated Admin</span>
+            </div>
+          </div>
+
         </div>
       </div>
 
