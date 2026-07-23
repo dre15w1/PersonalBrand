@@ -385,30 +385,31 @@
     /* Full-screen mobile overlay */
     .mobile-overlay {
       position: fixed;
-      inset: 0;
-      z-index: 45;
-      background: rgba(8,7,10,0.98);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 100;
+      background: #08070a;
       opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0s linear 0.35s;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
     }
     body.menu-open .mobile-overlay {
       opacity: 1;
-      pointer-events: auto;
+      visibility: visible;
+      transition: opacity 0.35s ease;
     }
+    body.menu-open .mast { opacity: 0; pointer-events: none; }
     .mobile-overlay-inner {
       width: 100%;
       max-width: 640px;
-      padding: 100px 32px 60px;
+      margin: 0 auto;
+      padding: 40px 28px 60px;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      min-height: 100dvh;
+      box-sizing: border-box;
     }
     .mobile-overlay-header {
       display: flex;
@@ -608,29 +609,6 @@
       <span></span><span></span><span></span>
     </button>
 
-    <!-- Full-screen mobile overlay menu -->
-    <nav class="mobile-overlay" id="mobileMenu" aria-label="Site navigation">
-      <div class="mobile-overlay-inner">
-        <div class="mobile-overlay-header">
-          <div class="mobile-overlay-issue">VOL.001 · ATLANTA · 2026</div>
-          <button class="mobile-overlay-close" aria-label="Close menu" id="mobileClose">&times;</button>
-        </div>
-        <ul class="mobile-overlay-list">
-          <li><a href="#dossier"><span class="mnum">§ 01</span> Dossier</a></li>
-          <li><a href="#career"><span class="mnum">§ 02</span> The Track Record</a></li>
-          <li><a href="#chapters"><span class="mnum">§ 03</span> The Work</a></li>
-          <li><a href="#the-build"><span class="mnum">§ 04</span> The Build</a></li>
-          <li><a href="#collection"><span class="mnum">§ 05</span> The Collection</a></li>
-          <li><a href="#experiences"><span class="mnum">§ 06</span> Experiences</a></li>
-          <li><a href="#atlas"><span class="mnum">§ 07</span> The Atlas</a></li>
-          <li><a href="#community"><span class="mnum">§ 09</span> The Audience</a></li>
-          <li><a href="#inquiry"><span class="mnum">§ 10</span> Inquiry</a></li>
-        </ul>
-        <div class="mobile-overlay-foot">
-          <a href="mailto:andreewalker10@gmail.com">andreewalker10@gmail.com</a>
-        </div>
-      </div>
-    </nav>
   </header>
 
   <section class="hero">
@@ -1451,16 +1429,45 @@
     // Mobile menu toggle
     (function() {
       const toggle = document.getElementById('mastToggle');
-      const close = document.getElementById('mobileClose');
-      const links = document.querySelectorAll('.mobile-overlay-list a, .mobile-overlay-foot a');
+      const closeBtn = document.getElementById('mobileClose');
+      const overlay = document.getElementById('mobileMenu');
       const body = document.body;
-      if (!toggle) return;
-      toggle.addEventListener('click', () => body.classList.toggle('menu-open'));
-      if (close) close.addEventListener('click', () => body.classList.remove('menu-open'));
-      links.forEach(a => a.addEventListener('click', () => body.classList.remove('menu-open')));
-      // ESC key closes
+      if (!toggle || !overlay) return;
+
+      function openMenu() {
+        body.classList.add('menu-open');
+        overlay.scrollTop = 0;
+      }
+      function closeMenu() {
+        body.classList.remove('menu-open');
+      }
+
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (body.classList.contains('menu-open')) closeMenu();
+        else openMenu();
+      });
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          closeMenu();
+        });
+      }
+
+      // Delegate menu link clicks: close menu on any anchor tap
+      overlay.addEventListener('click', (e) => {
+        const link = e.target.closest('a[href^="#"], a[href^="mailto:"]');
+        if (link) {
+          closeMenu();
+        }
+      });
+
+      // ESC key
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') body.classList.remove('menu-open');
+        if (e.key === 'Escape' && body.classList.contains('menu-open')) closeMenu();
       });
     })();
 
@@ -1476,5 +1483,31 @@
       });
     });
   </script>
+
+
+  <!-- Full-screen mobile overlay menu -->
+    <nav class="mobile-overlay" id="mobileMenu" aria-label="Site navigation">
+      <div class="mobile-overlay-inner">
+        <div class="mobile-overlay-header">
+          <div class="mobile-overlay-issue">VOL.001 · ATLANTA · 2026</div>
+          <button class="mobile-overlay-close" aria-label="Close menu" id="mobileClose">&times;</button>
+        </div>
+        <ul class="mobile-overlay-list">
+          <li><a href="#dossier"><span class="mnum">§ 01</span> Dossier</a></li>
+          <li><a href="#career"><span class="mnum">§ 02</span> The Track Record</a></li>
+          <li><a href="#chapters"><span class="mnum">§ 03</span> The Work</a></li>
+          <li><a href="#the-build"><span class="mnum">§ 04</span> The Build</a></li>
+          <li><a href="#collection"><span class="mnum">§ 05</span> The Collection</a></li>
+          <li><a href="#experiences"><span class="mnum">§ 06</span> Experiences</a></li>
+          <li><a href="#atlas"><span class="mnum">§ 07</span> The Atlas</a></li>
+          <li><a href="#community"><span class="mnum">§ 09</span> The Audience</a></li>
+          <li><a href="#inquiry"><span class="mnum">§ 10</span> Inquiry</a></li>
+        </ul>
+        <div class="mobile-overlay-foot">
+          <a href="mailto:andreewalker10@gmail.com">andreewalker10@gmail.com</a>
+        </div>
+      </div>
+    </nav>
+
 </body>
 </html>
