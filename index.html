@@ -281,6 +281,9 @@
     .ex5 { grid-column: 9 / 13; aspect-ratio: 1; }
     .ex6 { grid-column: 1 / 7; aspect-ratio: 16/10; }
     .ex7 { grid-column: 7 / 13; aspect-ratio: 16/10; }
+    .ex8 { grid-column: 1 / 5; aspect-ratio: 1; }
+    .ex9 { grid-column: 5 / 9; aspect-ratio: 1; }
+    .ex10 { grid-column: 9 / 13; aspect-ratio: 1; }
 
     /* ATLAS */
     #atlas { background: var(--bg-soft); padding: 140px 0; border-top: 1px solid var(--rule); }
@@ -549,6 +552,9 @@
       .ex5 { grid-column: 1 / 7; }
       .ex6 { grid-column: 1 / 7; }
       .ex7 { grid-column: 1 / 7; }
+      .ex8 { grid-column: 1 / 7; }
+      .ex9 { grid-column: 1 / 7; }
+      .ex10 { grid-column: 1 / 7; }
       .atlas-grid { grid-template-columns: 1fr 1fr; }
       #atlas .atlas-header, #proof .proof-header { padding: 0 20px; }
       .proof-spread { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 100px; }
@@ -707,6 +713,8 @@
         <div class="dossier-photo-caption">Stellenbosch · 2024</div>
         <div class="dossier-photo" style="background-image: url('images/diesel-watch.jpg');"></div>
         <div class="dossier-photo-caption">Off-Duty</div>
+        <div class="dossier-photo" style="background-image: url('images/roxy-dog.jpg'); background-position: center 30%;"></div>
+        <div class="dossier-photo-caption">Roxy · The OG</div>
       </div>
     </div>
   </section>
@@ -1001,7 +1009,14 @@
     </div>
   </section>
 
-<section id="career">
+<div class="photo-break" style="background-image: url('images/podium-manager.jpg');">
+    <div class="photo-break-content">
+      <div class="photo-break-quote">"Leading the room isn't a title. It's the follow-through."</div>
+      <div class="photo-break-cite">— On becoming Manager, IT Application Development</div>
+    </div>
+  </div>
+
+  <section id="career">
     <div class="career-header reveal">
       <div class="section-num">§ 04</div>
       <div class="section-kicker">The Track Record</div>
@@ -1222,6 +1237,13 @@
     </div>
   </section>
 
+  <div class="photo-break" style="background-image: url('images/wings-up.jpg');">
+    <div class="photo-break-content">
+      <div class="photo-break-quote">"Wings up. Ready for takeoff to new heights."</div>
+      <div class="photo-break-cite">— A.W.</div>
+    </div>
+  </div>
+
   <!-- NEW: EXPERIENCES SECTION (Dining, Events, Detail) -->
   <section id="experiences">
     <div class="exp-wrap">
@@ -1260,6 +1282,18 @@
         <div class="exp-card ex7 reveal reveal-d1">
           <div class="exp-img" style="background-image: url('images/nobu-atlanta.jpg'); background-position: center 30%;"></div>
           <div class="exp-info"><div class="exp-tag">Dining · Atlanta</div><div class="exp-name">Nobu</div></div>
+        </div>
+        <div class="exp-card ex8 reveal reveal-d2">
+          <div class="exp-img" style="background-image: url('images/ribeye-dinner.jpg');"></div>
+          <div class="exp-info"><div class="exp-tag">The Ribeye</div><div class="exp-name">Upscale &amp; Unhurried</div></div>
+        </div>
+        <div class="exp-card ex9 reveal">
+          <div class="exp-img" style="background-image: url('images/miami-yacht.jpg'); background-position: center 40%;"></div>
+          <div class="exp-info"><div class="exp-tag">Yacht · Miami</div><div class="exp-name">A Friend's Birthday</div></div>
+        </div>
+        <div class="exp-card ex10 reveal reveal-d1">
+          <div class="exp-img" style="background-image: url('images/buckhead-hangout.jpg'); background-position: center 25%;"></div>
+          <div class="exp-info"><div class="exp-tag">Buckhead · Atlanta</div><div class="exp-name">No Occasion Needed</div></div>
         </div>
       </div>
     </div>
@@ -1369,6 +1403,16 @@
         <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d1">
           <div class="atlas-img" style="background-image: url('images/rio-flight-home.jpg');"></div>
           <div class="atlas-info"><div class="atlas-coord">22.9°S · 43.2°W</div><div class="atlas-city">Rio de Janeiro</div><div class="atlas-country">Brazil · The Flight Home</div></div>
+        </div>
+
+        <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal">
+          <div class="atlas-img" style="background-image: url('images/paris-lv-museum.jpg'); background-position: center 20%;"></div>
+          <div class="atlas-info"><div class="atlas-coord">48.9°N · 2.3°E</div><div class="atlas-city">Paris</div><div class="atlas-country">France · The LV Museum</div></div>
+        </div>
+
+        <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d1">
+          <div class="atlas-img" style="background-image: url('images/ibiza-moment.jpg');"></div>
+          <div class="atlas-info"><div class="atlas-coord">38.9°N · 1.4°E</div><div class="atlas-city">Ibiza</div><div class="atlas-country">Spain · A Moment to Myself</div></div>
         </div>
 
       </div>
