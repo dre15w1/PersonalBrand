@@ -285,6 +285,9 @@
     .ex9 { grid-column: 5 / 9; aspect-ratio: 1; }
     .ex10 { grid-column: 9 / 13; aspect-ratio: 1; }
     .ex11 { grid-column: 1 / 7; aspect-ratio: 16/10; }
+    .ex12 { grid-column: 1 / 5; aspect-ratio: 1; }
+    .ex13 { grid-column: 5 / 9; aspect-ratio: 1; }
+    .ex14 { grid-column: 9 / 13; aspect-ratio: 1; }
 
     /* ATLAS */
     #atlas { background: var(--bg-soft); padding: 140px 0; border-top: 1px solid var(--rule); }
@@ -557,6 +560,9 @@
       .ex9 { grid-column: 1 / 7; }
       .ex10 { grid-column: 1 / 7; }
       .ex11 { grid-column: 1 / 7; }
+      .ex12 { grid-column: 1 / 7; }
+      .ex13 { grid-column: 1 / 7; }
+      .ex14 { grid-column: 1 / 7; }
       .atlas-grid { grid-template-columns: 1fr 1fr; }
       #atlas .atlas-header, #proof .proof-header { padding: 0 20px; }
       .proof-spread { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 100px; }
@@ -744,12 +750,14 @@
       <div style="font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px;">Off The Clock</div>
       <div style="font-family: Fraunces,serif; font-size: 1.3rem; font-style: italic; color: var(--ink);">The same discipline that builds platforms builds the body.</div>
     </div>
-    <div style="display:grid; grid-template-columns: repeat(5,1fr); gap:2px;">
+    <div style="display:grid; grid-template-columns: repeat(7,1fr); gap:2px;">
       <div style="aspect-ratio:3/4; background-image:url('images/gym-1.jpg'); background-size:cover; background-position:center;" class="reveal"></div>
       <div style="aspect-ratio:3/4; background-image:url('images/gym-2.jpg'); background-size:cover; background-position:center;" class="reveal reveal-d1"></div>
       <div style="aspect-ratio:3/4; background-image:url('images/gym-3.jpg'); background-size:cover; background-position:center;" class="reveal reveal-d2"></div>
       <div style="aspect-ratio:3/4; background-image:url('images/gym-4.jpg'); background-size:cover; background-position:center;" class="reveal reveal-d3"></div>
-      <div style="aspect-ratio:3/4; background-image:url('images/stylish-confidence.jpg'); background-size:cover; background-position:center top;" class="reveal"></div>
+      <div style="aspect-ratio:3/4; background-image:url('images/gym-5.jpg'); background-size:cover; background-position:center;" class="reveal"></div>
+      <div style="aspect-ratio:3/4; background-image:url('images/gym-6.jpg'); background-size:cover; background-position:center;" class="reveal reveal-d1"></div>
+      <div style="aspect-ratio:3/4; background-image:url('images/stylish-confidence.jpg'); background-size:cover; background-position:center top;" class="reveal reveal-d2"></div>
     </div>
   </div>
 
@@ -1192,6 +1200,13 @@
     </div>
   </div>
 
+  <div class="photo-break" style="background-image: url('images/fleet-lineup.jpg');">
+    <div class="photo-break-content">
+      <div class="photo-break-quote">"Land Rover, R8, F-Type — lined up so I can see how far I've come."</div>
+      <div class="photo-break-cite">— A.W.</div>
+    </div>
+  </div>
+
   <section id="collection">
     <div class="collection-wrap">
       <div class="collection-header">
@@ -1208,7 +1223,7 @@
 
       <div class="collection-grid collection-tab active" data-tab="cars">
         <div class="specimen">
-          <div class="specimen-img" style="background-image: url('images/mclaren-portrait.jpg');"></div>
+          <div class="specimen-img" style="background-image: url('images/mclaren-interior-ap.jpg');"></div>
           <div class="specimen-tag">No. 001 · Supercar</div>
           <div class="specimen-name">McLaren <em>570S</em></div>
           <div class="specimen-spec">3.8L Twin-Turbo V8<br>562 HP · 0–60 in 3.1s<br>Chameleon Wrap · Turo</div>
@@ -1239,7 +1254,7 @@
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:2px; margin: 40px 0 60px;">
+      <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:2px; margin: 40px 0 60px;">
         <div style="position:relative; aspect-ratio:1; overflow:hidden;" class="reveal">
           <div style="width:100%; height:100%; background-image:url('images/mclaren-garage.jpg'); background-size:cover; background-position:center;"></div>
         </div>
@@ -1249,12 +1264,15 @@
         <div style="position:relative; aspect-ratio:1; overflow:hidden;" class="reveal reveal-d2">
           <div style="width:100%; height:100%; background-image:url('images/jaguar-lv.jpg'); background-size:cover; background-position:center;"></div>
         </div>
+        <div style="position:relative; aspect-ratio:1; overflow:hidden;" class="reveal reveal-d3">
+          <div style="width:100%; height:100%; background-image:url('images/tesla-selfdrive.jpg'); background-size:cover; background-position:center;"></div>
+        </div>
       </div>
-      <div class="reveal" style="text-align:center; font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 20px;">The Garage · Custom Wheels on the R8 Before 30 · Matte-Wrapped McLaren · LV Meets the Jaguar XKR</div>
+      <div class="reveal" style="text-align:center; font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 20px;">The Garage · Custom Wheels on the R8 Before 30 · Matte-Wrapped McLaren · LV Meets the Jaguar XKR · Tesla on Autopilot</div>
 
       <div class="collection-grid collection-tab" data-tab="watches">
         <div class="specimen">
-          <div class="specimen-img" style="background-image: url('images/ap-black.jpg');"></div>
+          <div class="specimen-img" style="background-image: url('images/ap-home.jpg');"></div>
           <div class="specimen-tag">No. 001 · Haute Horlogerie</div>
           <div class="specimen-name">Audemars Piguet <em>Royal Oak</em></div>
           <div class="specimen-spec">Black Ceramic Chronograph<br>41mm · Mega Tapisserie Dial<br>The Statement Piece</div>
@@ -1344,6 +1362,18 @@
           <div class="exp-img" style="background-image: url('images/red-carpet-suit.jpg'); background-position: center 20%;"></div>
           <div class="exp-info"><div class="exp-tag">Red Carpet</div><div class="exp-name">Custom Tailored</div></div>
         </div>
+        <div class="exp-card ex12 reveal">
+          <div class="exp-img" style="background-image: url('images/country-club.jpg'); background-position: center 30%;"></div>
+          <div class="exp-info"><div class="exp-tag">Country Club</div><div class="exp-name">An Afternoon Off</div></div>
+        </div>
+        <div class="exp-card ex13 reveal reveal-d1">
+          <div class="exp-img" style="background-image: url('images/tech-event.jpg'); background-position: center 25%;"></div>
+          <div class="exp-info"><div class="exp-tag">Members Only</div><div class="exp-name">Tech Career Circle</div></div>
+        </div>
+        <div class="exp-card ex14 reveal reveal-d2">
+          <div class="exp-img" style="background-image: url('images/style-car.jpg'); background-position: center 20%;"></div>
+          <div class="exp-info"><div class="exp-tag">No Labels Needed</div><div class="exp-name">The Everyday Fit</div></div>
+        </div>
       </div>
     </div>
   </section>
@@ -1407,6 +1437,11 @@
         <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal">
           <div class="atlas-img" style="background-image: url('images/capetown-beach.jpg');"></div>
           <div class="atlas-info"><div class="atlas-coord">33.9°S · 18.4°E</div><div class="atlas-city">Cape Town</div><div class="atlas-country">South Africa · 8 stays</div></div>
+        </div>
+
+        <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d1">
+          <div class="atlas-img" style="background-image: url('images/capetown-icecream.jpg'); background-position: center 30%;"></div>
+          <div class="atlas-info"><div class="atlas-coord">33.9°S · 18.4°E</div><div class="atlas-city">Cape Town</div><div class="atlas-country">South Africa · Upscale Ice Cream Stop</div></div>
         </div>
 
         <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d1">
