@@ -288,6 +288,9 @@
     .ex12 { grid-column: 1 / 5; aspect-ratio: 1; }
     .ex13 { grid-column: 5 / 9; aspect-ratio: 1; }
     .ex14 { grid-column: 9 / 13; aspect-ratio: 1; }
+    .ex15 { grid-column: 1 / 5; aspect-ratio: 1; }
+    .ex16 { grid-column: 5 / 9; aspect-ratio: 1; }
+    .ex17 { grid-column: 9 / 13; aspect-ratio: 1; }
 
     /* ATLAS */
     #atlas { background: var(--bg-soft); padding: 140px 0; border-top: 1px solid var(--rule); }
@@ -563,6 +566,9 @@
       .ex12 { grid-column: 1 / 7; }
       .ex13 { grid-column: 1 / 7; }
       .ex14 { grid-column: 1 / 7; }
+      .ex15 { grid-column: 1 / 7; }
+      .ex16 { grid-column: 1 / 7; }
+      .ex17 { grid-column: 1 / 7; }
       .atlas-grid { grid-template-columns: 1fr 1fr; }
       #atlas .atlas-header, #proof .proof-header { padding: 0 20px; }
       .proof-spread { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 100px; }
@@ -725,6 +731,8 @@
         <div class="dossier-photo-caption">Roxy · The OG</div>
         <div class="dossier-photo" style="background-image: url('images/roxy-stairs.jpg');"></div>
         <div class="dossier-photo-caption">Roxy · Morning Sun</div>
+        <div class="dossier-photo" style="background-image: url('images/roxy-couch.jpg'); background-position: center 25%;"></div>
+        <div class="dossier-photo-caption">Roxy · At Home</div>
       </div>
     </div>
   </section>
@@ -758,6 +766,13 @@
       <div style="aspect-ratio:3/4; background-image:url('images/gym-5.jpg'); background-size:cover; background-position:center;" class="reveal"></div>
       <div style="aspect-ratio:3/4; background-image:url('images/gym-6.jpg'); background-size:cover; background-position:center;" class="reveal reveal-d1"></div>
       <div style="aspect-ratio:3/4; background-image:url('images/stylish-confidence.jpg'); background-size:cover; background-position:center top;" class="reveal reveal-d2"></div>
+    </div>
+  </div>
+
+  <div class="photo-break" style="background-image: url('images/milestone-29.jpg');">
+    <div class="photo-break-content">
+      <div class="photo-break-quote">"29. A home. A car. Earned, not given."</div>
+      <div class="photo-break-cite">— A.W.</div>
     </div>
   </div>
 
@@ -1241,7 +1256,7 @@
           <div class="specimen-spec">5.2L V10 FSI · 540 HP<br>Cream Interior · Plate: MY-R8<br>The Driver's Choice</div>
         </div>
         <div class="specimen">
-          <div class="specimen-img" style="background-image: url('images/jaguar-ftype.jpg');"></div>
+          <div class="specimen-img" style="background-image: url('images/jaguar-new.jpg');"></div>
           <div class="specimen-tag">No. 004 · British Roadster</div>
           <div class="specimen-name">Jaguar <em>F-Type S</em></div>
           <div class="specimen-spec">3.0L Supercharged V6 · 380 HP<br>Convertible · Red Interior<br>Pure Driving Theater</div>
@@ -1254,7 +1269,7 @@
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:2px; margin: 40px 0 60px;">
+      <div style="display:grid; grid-template-columns: repeat(5,1fr); gap:2px; margin: 40px 0 60px;">
         <div style="position:relative; aspect-ratio:1; overflow:hidden;" class="reveal">
           <div style="width:100%; height:100%; background-image:url('images/mclaren-garage.jpg'); background-size:cover; background-position:center;"></div>
         </div>
@@ -1267,8 +1282,11 @@
         <div style="position:relative; aspect-ratio:1; overflow:hidden;" class="reveal reveal-d3">
           <div style="width:100%; height:100%; background-image:url('images/tesla-selfdrive.jpg'); background-size:cover; background-position:center;"></div>
         </div>
+        <div style="position:relative; aspect-ratio:1; overflow:hidden;" class="reveal">
+          <div style="width:100%; height:100%; background-image:url('images/mclaren-first-dream.jpg'); background-size:cover; background-position:center;"></div>
+        </div>
       </div>
-      <div class="reveal" style="text-align:center; font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 20px;">The Garage · Custom Wheels on the R8 Before 30 · Matte-Wrapped McLaren · LV Meets the Jaguar XKR · Tesla on Autopilot</div>
+      <div class="reveal" style="text-align:center; font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 20px;">The Garage · Custom Wheels on the R8 Before 30 · Matte-Wrapped McLaren · LV Meets the Jaguar XKR · Tesla on Autopilot · The First McLaren, Dream Spec</div>
 
       <div class="collection-grid collection-tab" data-tab="watches">
         <div class="specimen">
@@ -1374,6 +1392,18 @@
           <div class="exp-img" style="background-image: url('images/style-car.jpg'); background-position: center 20%;"></div>
           <div class="exp-info"><div class="exp-tag">No Labels Needed</div><div class="exp-name">The Everyday Fit</div></div>
         </div>
+        <div class="exp-card ex15 reveal">
+          <div class="exp-img" style="background-image: url('images/bali-atv.jpg'); background-position: center 30%;"></div>
+          <div class="exp-info"><div class="exp-tag">Bali</div><div class="exp-name">ATV Through the Hills</div></div>
+        </div>
+        <div class="exp-card ex16 reveal reveal-d1">
+          <div class="exp-img" style="background-image: url('images/ga-canoe.jpg'); background-position: center 30%;"></div>
+          <div class="exp-info"><div class="exp-tag">Georgia River</div><div class="exp-name">Canoe Day</div></div>
+        </div>
+        <div class="exp-card ex17 reveal reveal-d2">
+          <div class="exp-img" style="background-image: url('images/london-glitterbox.jpg'); background-position: center 25%;"></div>
+          <div class="exp-info"><div class="exp-tag">Glitterbox · London</div><div class="exp-name">EDM Night</div></div>
+        </div>
       </div>
     </div>
   </section>
@@ -1444,6 +1474,11 @@
           <div class="atlas-info"><div class="atlas-coord">33.9°S · 18.4°E</div><div class="atlas-city">Cape Town</div><div class="atlas-country">South Africa · Upscale Ice Cream Stop</div></div>
         </div>
 
+        <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d2">
+          <div class="atlas-img" style="background-image: url('images/capetown-christmas.jpg');"></div>
+          <div class="atlas-info"><div class="atlas-coord">33.9°S · 18.4°E</div><div class="atlas-city">Cape Town</div><div class="atlas-country">South Africa · Christmas Away From Home</div></div>
+        </div>
+
         <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d1">
           <div class="atlas-img" style="background-image: url('images/marble-selfie.jpg');"></div>
           <div class="atlas-info"><div class="atlas-coord">51.5°N · 0.1°W</div><div class="atlas-city">London</div><div class="atlas-country">UK · #1 Destination</div></div>
@@ -1455,7 +1490,7 @@
         </div>
 
         <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d3">
-          <div class="atlas-img" style="background-image: url('images/bali-cliff.jpg');"></div>
+          <div class="atlas-img" style="background-image: url('images/bali-mountaintop.jpg');"></div>
           <div class="atlas-info"><div class="atlas-coord">8.3°S · 115.0°E</div><div class="atlas-city">Bali</div><div class="atlas-country">Indonesia</div></div>
         </div>
 
@@ -1470,7 +1505,7 @@
         </div>
 
         <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d2">
-          <div class="atlas-img" style="background-image: url('images/miami-bow.jpg');"></div>
+          <div class="atlas-img" style="background-image: url('images/miami-yacht-shore.jpg');"></div>
           <div class="atlas-info"><div class="atlas-coord">25.8°N · 80.1°W</div><div class="atlas-city">Miami</div><div class="atlas-country">Florida, USA</div></div>
         </div>
 
@@ -1487,6 +1522,11 @@
         <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d1">
           <div class="atlas-img" style="background-image: url('images/rio-flight-home.jpg');"></div>
           <div class="atlas-info"><div class="atlas-coord">22.9°S · 43.2°W</div><div class="atlas-city">Rio de Janeiro</div><div class="atlas-country">Brazil · The Flight Home</div></div>
+        </div>
+
+        <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal reveal-d2">
+          <div class="atlas-img" style="background-image: url('images/rio-childhood-friends.jpg');"></div>
+          <div class="atlas-info"><div class="atlas-coord">22.9°S · 43.2°W</div><div class="atlas-city">Rio de Janeiro</div><div class="atlas-country">Brazil · Childhood Best Friends</div></div>
         </div>
 
         <div style="position:relative; aspect-ratio:3/4; overflow:hidden; cursor:pointer;" class="atlas-card reveal">
