@@ -284,6 +284,7 @@
     .ex8 { grid-column: 1 / 5; aspect-ratio: 1; }
     .ex9 { grid-column: 5 / 9; aspect-ratio: 1; }
     .ex10 { grid-column: 9 / 13; aspect-ratio: 1; }
+    .ex11 { grid-column: 1 / 7; aspect-ratio: 16/10; }
 
     /* ATLAS */
     #atlas { background: var(--bg-soft); padding: 140px 0; border-top: 1px solid var(--rule); }
@@ -555,6 +556,7 @@
       .ex8 { grid-column: 1 / 7; }
       .ex9 { grid-column: 1 / 7; }
       .ex10 { grid-column: 1 / 7; }
+      .ex11 { grid-column: 1 / 7; }
       .atlas-grid { grid-template-columns: 1fr 1fr; }
       #atlas .atlas-header, #proof .proof-header { padding: 0 20px; }
       .proof-spread { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 100px; }
@@ -715,6 +717,8 @@
         <div class="dossier-photo-caption">Off-Duty</div>
         <div class="dossier-photo" style="background-image: url('images/roxy-dog.jpg'); background-position: center 30%;"></div>
         <div class="dossier-photo-caption">Roxy · The OG</div>
+        <div class="dossier-photo" style="background-image: url('images/roxy-stairs.jpg');"></div>
+        <div class="dossier-photo-caption">Roxy · Morning Sun</div>
       </div>
     </div>
   </section>
@@ -732,6 +736,20 @@
     <div class="photo-break-content">
       <div class="photo-break-quote">"Build it. Sell it. Drive it. Repeat."</div>
       <div class="photo-break-cite">— The Operating Principle</div>
+    </div>
+  </div>
+
+  <div style="max-width: 1400px; margin: 0 auto; padding: 60px 48px;">
+    <div class="reveal" style="text-align: center; margin-bottom: 32px;">
+      <div style="font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px;">Off The Clock</div>
+      <div style="font-family: Fraunces,serif; font-size: 1.3rem; font-style: italic; color: var(--ink);">The same discipline that builds platforms builds the body.</div>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(5,1fr); gap:2px;">
+      <div style="aspect-ratio:3/4; background-image:url('images/gym-1.jpg'); background-size:cover; background-position:center;" class="reveal"></div>
+      <div style="aspect-ratio:3/4; background-image:url('images/gym-2.jpg'); background-size:cover; background-position:center;" class="reveal reveal-d1"></div>
+      <div style="aspect-ratio:3/4; background-image:url('images/gym-3.jpg'); background-size:cover; background-position:center;" class="reveal reveal-d2"></div>
+      <div style="aspect-ratio:3/4; background-image:url('images/gym-4.jpg'); background-size:cover; background-position:center;" class="reveal reveal-d3"></div>
+      <div style="aspect-ratio:3/4; background-image:url('images/stylish-confidence.jpg'); background-size:cover; background-position:center top;" class="reveal"></div>
     </div>
   </div>
 
@@ -806,6 +824,13 @@
 
 
   <!-- ===== § 04 — THE BUILD ===== -->
+  <div class="photo-break" style="background-image: url('images/london-layover.jpg');">
+    <div class="photo-break-content">
+      <div class="photo-break-quote">"Layover in London. Eyes still on the charts."</div>
+      <div class="photo-break-cite">— En Route to Cape Town</div>
+    </div>
+  </div>
+
   <section id="the-build" style="background: linear-gradient(180deg, #0a090c 0%, #0f0d13 100%); border-top: 1px solid var(--rule); padding: 140px 0;">
     <div style="max-width: 1400px; margin: 0 auto; padding: 0 48px;">
 
@@ -1214,6 +1239,19 @@
         </div>
       </div>
 
+      <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:2px; margin: 40px 0 60px;">
+        <div style="position:relative; aspect-ratio:1; overflow:hidden;" class="reveal">
+          <div style="width:100%; height:100%; background-image:url('images/mclaren-garage.jpg'); background-size:cover; background-position:center;"></div>
+        </div>
+        <div style="position:relative; aspect-ratio:1; overflow:hidden;" class="reveal reveal-d1">
+          <div style="width:100%; height:100%; background-image:url('images/r8-gas-station.jpg'); background-size:cover; background-position:center;"></div>
+        </div>
+        <div style="position:relative; aspect-ratio:1; overflow:hidden;" class="reveal reveal-d2">
+          <div style="width:100%; height:100%; background-image:url('images/jaguar-lv.jpg'); background-size:cover; background-position:center;"></div>
+        </div>
+      </div>
+      <div class="reveal" style="text-align:center; font-family: JetBrains Mono,monospace; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 20px;">The Garage · Custom Wheels on the R8 Before 30 · Matte-Wrapped McLaren · LV Meets the Jaguar XKR</div>
+
       <div class="collection-grid collection-tab" data-tab="watches">
         <div class="specimen">
           <div class="specimen-img" style="background-image: url('images/ap-black.jpg');"></div>
@@ -1236,6 +1274,13 @@
         </div>
     </div>
   </section>
+
+  <div class="photo-break" style="background-image: url('images/modelx-exit.jpg');">
+    <div class="photo-break-content">
+      <div class="photo-break-quote">"Doors up. That's what financial freedom looks like."</div>
+      <div class="photo-break-cite">— A.W.</div>
+    </div>
+  </div>
 
   <div class="photo-break" style="background-image: url('images/wings-up.jpg');">
     <div class="photo-break-content">
@@ -1294,6 +1339,10 @@
         <div class="exp-card ex10 reveal reveal-d1">
           <div class="exp-img" style="background-image: url('images/buckhead-hangout.jpg'); background-position: center 25%;"></div>
           <div class="exp-info"><div class="exp-tag">Buckhead · Atlanta</div><div class="exp-name">No Occasion Needed</div></div>
+        </div>
+        <div class="exp-card ex11 reveal reveal-d2">
+          <div class="exp-img" style="background-image: url('images/red-carpet-suit.jpg'); background-position: center 20%;"></div>
+          <div class="exp-info"><div class="exp-tag">Red Carpet</div><div class="exp-name">Custom Tailored</div></div>
         </div>
       </div>
     </div>
@@ -1454,6 +1503,13 @@
       </div>
     </div>
   </section>
+
+  <div class="photo-break" style="background-image: url('images/thinking-1.jpg'); background-position: center 25%;">
+    <div class="photo-break-content">
+      <div class="photo-break-quote">"Really good stuff coming soon."</div>
+      <div class="photo-break-cite">— A Moment of Thought</div>
+    </div>
+  </div>
 
   <section id="inquiry">
     <div class="section-num">§ 09</div>
